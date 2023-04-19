@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--We can set here a css style 4 example:
+    <style>
+  body {background-color: powderblue;}
+  h1   {color: blue;}
+  p    {color: red;}
+  </style>
+  -->
     <title>Page Title</title>
   </head>
+  <body>
+    <a href="#C4">Jump to Links</a> 
+    <br>
+    <a href="#C1">Jump to Images</a> 
+    <hr>
+    <h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+    <h1 style="color:blue;">A Blue Heading</h1>
+    <p style="color:red;">A red paragraph.</p>
+    <h1 style="background-color:rgb(0, 255, 0);">rgb(0, 255, 0)</h1>
+    <h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+    <h1 style="background-color:rgb(60, 60, 60);"><abbr title="Shades of gray are often defined using equal values for all three parameters:">rgb(60, 60, 60)</abbr></h1>
+  </body>
   <body style="background-color:powderblue;">
     <h1 style="background-color:pink;">My First Heading</h1>
     <p style="background-color:tomato;">My <b>first</b> paragraph</p>
@@ -16,9 +35,36 @@
     <p>My favorite color is <del>blue</del> <ins>red.</ins></p>
     <br>
     <small>This is some smaller text.</small>
+    <hr>
+    <p>This text will be written from right to left</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo> 
+    <hr>
     <h1 style="font-family:verdana;">This is heading 1</h1>
     <p title="I'm a tooltip" style="font-family:courier;">This is a paragraph.</p> 
-    <h2>This is heading 2</h2>
+    <h2 style = "border:2px solid DodgerBlue;">This is heading 2 and example of border color</h2>
+    <p>WWF's goal is to: 'q is the quote '<q>Build a future where people live in harmony with nature.</q></p> 
+    <hr>
+    <h2>bottom we have example of abbreviations, informations when we mouseover text</h2>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+    <hr>
+    <h2>contact information -> author/owner</h2>
+    <p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+    <hr>
+    <h2>The HTML cite element defines the title of a work.</h2>
+    <p>Browsers usually display cite elements in italic.</p>
+
+<img src="https://www.w3schools.com/html/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
     <hr>
     <h3>This is heading 3</h3> 
     <p style="color:red;">This <sub>is</sub> a <br> <sup>red</sup> paragraph.</p> 
@@ -39,11 +85,53 @@
   <p style="color:blue;">I am blue</p>
   <p style="font-size:50px;">I am big</p>
     <h6>Heading 6</h6>
+    <p>Here is a quote from WWF's website:</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
     <br></br>
+
+    <!--<h2 id="C4">Chapter 4</h2>-->
+
+    <h2 id = "C4"style = "text-align:center;">Links</h2>
+
+    <p><a href="url"  target="_blank">link text</a></p>
+
     <a href="https://www.w3schools.com">This is a link</a> 
   <!--<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> this code do not works :()-->
-  <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" width="104" height="142">
+  <h2>Image as a Link</h2>
+
+<p>The image below is a link. Try to click on it.</p>
+<a href="https://www.w3schools.com" target="_blank">
+  <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt ="random cat from google" width="104" height="142">
+  <!--<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"> this is an alternative version of style image-->
+  </a>
   <br></br>
     <a href="https://www.w3schools.com">Visit W3Schools</a> 
+    <hr>
+    <h2>Link to an Email Address</h2>
+
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+<p><a href="mailto:someone@example.com">Send email</a></p>
+<hr>
+<h2>Button as a Links</h2>
+
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+<button onclick="document.location='https://www.w3schools.com'">Check button but with a web link</button>
+<hr>
+<h2>Link Titles</h2>
+<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+<hr>
+<h2 id = "C1"style = "text-align:center;">Images</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Face-smile.svg" alt="Smiley face" style="float:right;width:42px;height:42px;">
+  The image will float to the right of the text.</p>
+  
+  <p><img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Face-smile.svg" alt="Smiley face" style="float:left;width:42px;height:42px;">
+  The image will float to the left of the text.</p> 
+
   </body>
 </html>
