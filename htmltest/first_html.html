@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--We can set here a css style 4 example:
+    <style>
+  body {background-color: powderblue;}
+  h1   {color: blue;}
+  p    {color: red;}
+  </style>
+  -->
+  <style>
+    .city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+#myHeader {
+  background-color: yellowgreen;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+    p4 {
+      background-image: url('https://www.legalniewsieci.pl/!data/newsy/news_860.jpg');
+      /*background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+       background-size: 100% 100%; --> background stretch*/
+      color: yellow
+      
+    }
+    table, th, td {
+  border:1px solid black;
+}
+table, th, td {
+  border: 1px solid black;
+  /*border-collapse: collapse;*/
+  border-radius: 10px;
+}
+th, td {
+  background-color: #96D4D4;
+  border-color: #96D4D4;
+}
+th {
+  text-align: center;
+}
+ul1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li1 {
+  float: left;
+}
+
+li1 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li1 a:hover {
+  background-color: #111111;
+}
+  </style>
+    <title>Page Title</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!--it's the icon of the page at left site -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+    <a href="#C4">Jump to Links</a> 
+    <br>
+    <a href="#C1">Jump to Images</a> 
+    <br>
+    <a href="#C2">Jump to Tables</a>
+    <br>
+    <a href="#C3">Jump to lists</a>
+    <br>
+    <a href="#C5">Jump to classes</a>
+    <br>
+    <a href="#C6">Jump to ID</a>
+    <br>
+    <a href="#C7">Jump to Iframes</a>
+    <br>
+    <a href="#C8">Jump to JavaScript</a>
+    <br>
+    <a href="#C9">Jump to FilePath</a>
+    <br>
+    <a href="#C10">Jump to Responsive Web Design</a>
+    <hr>
+    <h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+    <h1 style="color:blue;">A Blue Heading</h1>
+    <p style="color:red;">A red paragraph.</p>
+    <h1 style="background-color:rgb(0, 255, 0);">rgb(0, 255, 0)</h1>
+    <h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+    <h1 style="background-color:rgb(60, 60, 60);"><abbr title="Shades of gray are often defined using equal values for all three parameters:">rgb(60, 60, 60)</abbr></h1>
+  </body>
+  <body style="background-color:powderblue;">
+    <h1 style="background-color:pink;">My First Heading</h1>
+    <p style="background-color:tomato;">My <b>first</b> paragraph</p>
+    <p>You should include the following &lt; meta&gt; element in all your web pages:</p>
+    &lt; meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+<p>This gives the browser instructions on how to control the page's dimensions and scaling.</p>
+<p><strong>click the image below to learn more about html layout elements</strong></p>
+<a href="https://www.w3schools.com/html/html_layout.asp" target="_blank">
+<img src="html-layout-elements.png" alt="table of layout elements">
+</a>
+<p>
+<a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Here we have a semantic examples</a>
+</p>
+
+<br>
+    <strong>This text is important!</strong> <br>
+    <b>This text is bold</b> 
+    <br>
+    <i>This text is italic</i> 
+    <br>
+    <em>This text is emphasized and <mark>mark</mark></em> 
+    <br>
+    <p>My favorite color is <del>blue</del> <ins>red.</ins></p>
+    <br>
+    <small>This is some smaller text.</small>
+    <hr>
+    <p>This text will be written from right to left</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo> 
+    <hr>
+    <h1 style="font-family:verdana;">This is heading 1</h1>
+    <p title="I'm a tooltip" style="font-family:courier;">This is a paragraph.</p> 
+    <h2 style = "border:2px solid DodgerBlue;">This is heading 2 and example of border color</h2>
+    <p>WWF's goal is to: 'q is the quote '<q>Build a future where people live in harmony with nature.</q></p> 
+    <hr>
+    <h2>bottom we have example of abbreviations, informations when we mouseover text</h2>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+    <hr>
+    <h2>contact information -> author/owner</h2>
+    <p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+    <hr>
+    <h2>The HTML cite element defines the title of a work.</h2>
+    <p>Browsers usually display cite elements in italic.</p>
+
+<img src="https://www.w3schools.com/html/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <hr>
+    <h3>This is heading 3</h3> 
+    <p style="color:red;">This <sub>is</sub> a <br> <sup>red</sup> paragraph.</p> 
+    <h4>Heading 4</h4>
+    <p style="font-size:160%;">test of pre 
+      <pre style="text-align:center;">
+      <i>My Bonnie lies over the ocean.</i>
+
+      My Bonnie lies over the sea.
+    
+      My Bonnie lies over the ocean.
+    
+      Oh, bring back my Bonnie to me.</pre>
+    </p>
+    <h5 style="font-size:60px;">Heading 5</h5>
+    <p>I am normal</p>
+  <p style="color:red;">I am red</p>
+  <p style="color:blue;">I am blue</p>
+  <p style="font-size:50px;">I am big</p>
+    <h6>Heading 6</h6>
+    <p>Here is a quote from WWF's website:</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+    <br></br>
+
+    <!--<h2 id="C4">Chapter 4</h2>-->
+
+    <h2 id = "C4"style = "text-align:center;">Links</h2>
+
+    <p><a href="url"  target="_blank">link text</a></p>
+
+    <a href="https://www.w3schools.com">This is a link</a> 
+  <!--<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> this code do not works :()-->
+  <h2>Image as a Link</h2>
+
+<p>The image below is a link. Try to click on it.</p>
+<a href="https://www.w3schools.com" target="_blank">
+  <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt ="random cat from google" width="104" height="142">
+  <!--<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"> this is an alternative version of style image-->
+  </a>
+  <br></br>
+    <a href="https://www.w3schools.com">Visit W3Schools</a> 
+    <hr>
+    <h2>Link to an Email Address</h2>
+
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+<p><a href="mailto:someone@example.com">Send email</a></p>
+<hr>
+<h2>Button as a Links</h2>
+
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+<button onclick="document.location='https://www.w3schools.com'">Check button but with a web link</button>
+<hr>
+<h2>Link Titles</h2>
+<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+<hr>
+<h2 id = "C1"style = "text-align:center;">Images</h2>
+<h2>Responsive Image</h2>
+<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+
+&lt;img src="img_girl.jpg" style="width:100%;"&gt;
+
+<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+<p>Resize the browser window to see the effect.</p>
+
+&lt;img src="img_girl.jpg" style="max-width:100%;height:auto;"&gt;
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Face-smile.svg" alt="Smiley face" style="float:right;width:42px;height:42px;">
+  The image will float to the right of the text.</p>
+  
+  <p><img id ="one"src="https://upload.wikimedia.org/wikipedia/commons/7/79/Face-smile.svg" alt="Smiley face" style="float:left;width:42px;height:42px;">
+  The image will float to the left of the text.</p> 
+
+  <h2 style = "text-align:center;">Image Maps</h2>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+<p4> random text for matrix #background Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element. </p4>
+<img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.w3schools.com/html/coffee.htm">
+</map>
+<h2>The picture Element</h2>
+<p>&lt;picture&gt;<br>
+  &lt;source srcset="img_avatar.png"&gt;<br>
+  &lt;source srcset="img_girl.jpg"&gt;<br>
+  &lt;img src="img_beatles.gif" alt="Beatles" style="width:auto;"&gt;<br>
+  &lt;picture&gt;
+
+<p><a href = "https://www.w3schools.com/html/html_images_picture.asp"> The picture element can be used when the image format is not supported by all devices.</a></p>
+
+<p>The device will use the first image format it supports, and ignore the rest of the images.</p></p>
+<!-- bottom we have example of allert when we click sth
+  <map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script> -->
+<h2 id = "C2" style = "text-align:center;">Tables</h2>
+<table style="width:100%">
+  <caption>Data</caption>
+  <tr>
+    <th>Company</th>
+    <th colspan="2">Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria </td>
+    <td>Anders</td>
+    <td>Germany</td>
+  </tr>
+  
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco</td>
+    <td>Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td colspan="2">Check the colspan:2</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Check the rowspan:2</th>
+  </tr>
+</table> 
+<p>To understand the example better, we have added borders to the table.</p>
+
+<table style ="margin-left:auto;margin-right:auto;">
+  <caption>Example of rowspan AND center on the page</caption>
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+</tr>
+</table> 
+<h2>Colgroup</h2>
+<p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+
+<table style="width: 100%;">
+<colgroup>
+  <col span="3" style="background-color: pink">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+<h2 id = "C3" style = "text-align:center;">Lists</h2>
+<h2>An unordered HTML list</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>An ordered HTML list</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+
+<h2>A Description List</h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h2>We can have four list item marks for unordered list</h2>
+
+<ul style="list-style-type:square;">
+  <li>Square -> like in this example</li>
+  <li>circle</li>
+  <li>disc like above lists</li>
+  <li>and none</li>
+</ul>
+
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul1>
+  <li1><a href="#home">Home</a></li1>
+  <li1><a href="#news">News</a></li1>
+  <li1><a href="#contact">Contact</a></li1>
+  <li1><a href="#about">About</a></li1>
+</ul1>
+<br>
+<h2>An ordered HTML list</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<table style ="margin-left:auto;margin-right:auto;">
+  <tr>
+  <th>Type</th>
+  <th>Description</th>
+  </tr>
+  <tr>
+    <td>type="1"</td>
+    <td>The list items will be numbered with numbers (default)</td>
+  </tr>
+  <tr>
+    <td>type="A"</td>
+    <td>The list items will be numbered with uppercase letters</td>
+  </tr>
+  <tr>
+    <td>type="a"</td>
+   	<td>The list items will be numbered with lowercase letters</td>
+  </tr>
+  <tr>
+    <td>type="I"</td>
+    <td>The list items will be numbered with uppercase roman numbers</td>
+  </tr>
+  <tr>
+    <td>type="i"</td> 	
+    <td>The list items will be numbered with lowercase roman numbers</td>
+  </tr>
+</table>
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<h2>The start attribute</h2>
+<p>By default, an ordered list will start counting from 1. Use the start attribute to start counting from a specified number:</p>
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="I" start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+
+<h2>A Description List</h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<h2 id = "C5" style = "text-align:center;">Classes</h2>
+<a href="https://www.w3schools.com/html/html_classes.asp" target="_blank">here link for this section</a>
+<p>Hello World</p>
+<div>Hello World</div> 
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+  </div> 
+  
+  <div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+  </div>
+  
+  <div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+<h2 id = "C6" style = "text-align:center;">ID</h2>
+
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+
+<h1 id="myHeader">My Header</h1>
+<button onclick="displayResult()">Change text of header</button>
+<p>using id attribute we can jump to another section in this page or another</p>
+<p>&lt; a href="html_demo.html#C4">Jump to Chapter 4 /a &gt;</p>
+
+<script>
+  function displayResult() {
+    document.getElementById("myHeader").innerHTML = "Have a nice day!";
+  }
+  </script> 
+
+<h2 id = "C7" style = "text-align:center;">Iframes</h2>
+<h2>HTML Iframes</h2>
+<p>You can use the height and width attributes to specify the size of the iframe:</p>
+<a href="https://www.w3schools.com/html/html_iframe.asp">Here you can find more infromation about Iframes</a>
+
+<iframe src="https://www.w3schools.com/" height="200" width="300" title="Iframe Example"></iframe>
+
+<h2 id="C8" style="text-align:center;">JavaScript</h2>
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('hourANDdate').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="hourANDdate"></p>
+
+
+<p>JavaScript can change the content of an HTML element:</p>
+
+<button type="button" onclick="demo()">Click Me!</button>
+
+<p id="demo">This is a demonstration.</p>
+
+<script>
+function demo() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+<p id="colour_of_element">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("colour_of_element").style.fontSize = "25px"; 
+  document.getElementById("colour_of_element").style.color = "red";
+  document.getElementById("colour_of_element").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<p id="picktheBug"></p>
+
+<script>
+document.getElementById("picktheBug").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+<h2 id="C9" style="text-align:center;">FilePath</h2>
+<h2>Using a Full URL File Path</h2>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+
+<h2>Using a Relative File Path</h2>
+&lt;img src="/images/picture.jpg" alt="Mountain" style="width:300px"&gt;
+
+<h2 id = "C10" style = "text-align:center;">Responsive WEB design</h2>
+<h2>Responsive Image</h2>
+<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+
+&lt;img src="img_girl.jpg" style="width:100%;"&gt;
+
+<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+<p>Resize the browser window to see the effect.</p>
+
+&lt;img src="img_girl.jpg" style="max-width:100%;height:auto;"&gt;
+
+<h1 style="font-size:10vw;">Responsive Text</h1>
+
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<style>#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}</style>
+<script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+</script>
+
+
+</body>
+</html>
