@@ -1,0 +1,89 @@
+body {
+    background-color: lightblue;
+    /* background-image: url("paper.gif");*/
+    background-image: url("https://clipground.com/images/img_tree-png-1.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    /*color: red;
+    text-align: center;*/
+  }
+
+  #paral {
+    text-align: center;
+    color: red;
+  }
+
+  .center {
+    text-align: center;
+    color: red;
+  }
+  h2.center {
+    color:  green;
+    text-align: center;
+  }
+  p.large {
+    font-size:150%;
+  }
+.border {
+    border:2px solid Tomato;
+}
+
+div {
+    background-color: green;
+  }
+  
+  div.first {
+    opacity: 0.1;
+  }
+  
+  div.second {
+    opacity: 0.3;
+  }
+  
+  div.third {
+    opacity: 0.6;
+  }
+
+div.margins {
+        border: 1px solid black;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+        background-color: rgb(152, 206, 28);
+        padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+      
+}
+p.exl {
+    margin-left: inherit;
+}
+
+div.marginsShorthand {
+    border: 1px solid black;
+  margin: 100px 150px 100px 80px;
+  background-color: rgb(152, 206, 28);
+}
+div.marginAUTO{
+width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+div.heightANDwidth {
+    height: 200px;
+  width: 50%;
+  background-color: rgb(220, 230, 176);
+}
