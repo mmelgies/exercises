@@ -38,9 +38,9 @@ body {
     border:2px solid Tomato;
 }
 
-div {
+/*div {
     background-color: green;
-  }
+  }*/
   
   div.first {
     opacity: 0.1;
@@ -86,4 +86,101 @@ div.heightANDwidth {
     height: 200px;
   width: 50%;
   background-color: rgb(220, 230, 176);
+}
+
+div.BoxModel {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+#outline {
+  border: 2px solid black;
+  outline: #4CAF50 solid 10px;
+  outline-offset: 15px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+  background: yellow;
+}
+
+p.ex3 {outline: 5px solid yellow;}
+
+
+div.text
+{
+  border: 1px solid gray;
+  padding: 8px;
+  background: white;
+}
+.text h1
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+.text p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+.text a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+h1.b {
+  font-family: "Sofia", sans-serif;
+  color:black;
+}
+
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {background-color: coral;}
+.navigation ul
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+.navigation li { 
+    float: left;
+  }
+
+.navigation li a
+  {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.navigation li a:hover 
+    {
+      background-color: #111;
+    }
+
+.active {
+  background-color: red;
+}
+  
+.header {
+  background-color: #db0c0c;
+  padding: 20px;
+  text-align: center;
 }
