@@ -19,7 +19,25 @@
         <p id="data"></p>
     <br>
 
-  
+  <p id ="test"></p>
+
+    <script>
+        let x = myFunction(4, 3);
+        document.getElementById("test").innerHTML = x;
+       
+    </script>
+    <p id ="forMessage"></p>
+    <script>
+        document.getElementById("forMessage").innerHTML = MyMessage();
+    </script>
+<br>
+<p id ="tocelsius"></p>
+    <script>
+        let value = toCelsius(77);
+        document.getElementById("tocelsius").innerHTML = value;
+    </script>
+
+<br>
 
 <p id="demo">JavaScript can change HTML content.</p>
 <button type="button" onclick="changehtmlcontent()">Click Me!</button>
@@ -35,5 +53,63 @@
 
     <button type="myImage" onclick="Turnoffthebulb()">Turn off the light</button>
 </div>
+
+<p id="added"></p> <!--
+<script>
+    document.getElementById("add").innerHTML = 5 + 6;
+</script>-->
+<script>
+    let add = adding(5, 6);
+    document.getElementById("added").innerHTML = add;
+</script>
+
+
+
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="demo1"></p>
+
+<script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+
+
+<h2>JavaScript const</h2>
+
+<p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+<p id="const"></p>
+
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Change an element:
+cars[0] = "Toyota";
+
+// Add an element:
+cars.push("Audi");
+
+// Display the Array:
+document.getElementById("const").innerHTML = cars; 
+</script>
+
+<h1>JavaScript String Operators</h1>
+
+<p>All conditional operators can be used on both numbers and strings.</p>
+
+<p id="trueORfalse"></p>
+
+<script>
+let text1 = "A";
+let text2 = "B";
+let result = text1 < text2;
+document.getElementById("trueORfalse").innerHTML = "Is A less than B? " + result;
+</script>
+
     </body>
 </html>
