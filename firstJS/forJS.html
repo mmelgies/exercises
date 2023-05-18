@@ -18,25 +18,48 @@
         </div>
         <p id="data"></p>
     <br>
-
-  <p id ="test"></p>
-
+    <p id = 'fiat'></p>
     <script>
+        document.getElementById("fiat").innerHTML = car;
+    </script>
+    <p id = 'car_type'></p>
+    <script>
+        document.getElementById("car_type").innerHTML = "The car type is " + carType.type;
+    </script>
+    <p id = 'person_name'></p>
+    <script>
+        document.getElementById("person_name").innerHTML = person.fullName();
+    </script>
+<p id ="podzielpomnoz"></p>
+<script>
+    document.getElementById("podzielpomnoz").innerHTML = podziel(pomnoz(3,4));
+</script>
+<br>
+<p id = "xd">The temperature is:</p>
+<p>2</p>
+
+  <p id ="multiply"></p>
+        <script>
+            multiplyFunction(4, 4)
+        </script>
+   <!-- <script>
         let x = myFunction(4, 3);
         document.getElementById("test").innerHTML = x;
-       
-    </script>
+    </script>-->
     <p id ="forMessage"></p>
     <script>
-        document.getElementById("forMessage").innerHTML = MyMessage();
+        //document.getElementById("forMessage").innerHTML = MyMessage();
+        MyMessage();
     </script>
 <br>
 <p id ="tocelsius"></p>
-    <script>
+<script>toCelsius(77)</script>
+   <!-- <script>
         let value = toCelsius(77);
         document.getElementById("tocelsius").innerHTML = value;
-    </script>
-
+    </script>-->
+<p id="celsius2"></p>
+<script>toCelciusMix(77)</script>
 <br>
 
 <p id="demo">JavaScript can change HTML content.</p>
