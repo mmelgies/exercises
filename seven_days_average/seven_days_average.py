@@ -15,21 +15,15 @@ def main():
     # Construct 14 day lists of new cases for each states
     new_cases = calculate(reader, NUMBER_OF_TRACKED_DAYS)
 
-    # Create a list to store selected states
-    #states = []
     print("Choose one or more states to view average COVID cases.")
     print("Press enter when done.\n")
 
     state = input("State: ")
     print(f"\nSeven-Day Averages")
 
-    
-
-
     print_result(state, new_cases, NUMBER_OF_TRACKED_DAYS)
 
 
-# TODO:
 def calculate(reader, NUMBER_OF_TRACKED_DAYS):
     new_cases = dict()
     previous_cases = dict()
@@ -70,9 +64,7 @@ def percent(new_cases,state,NUMBER_OF_TRACKED_DAYS):
         return 0
 
 def averages(cases_in_state):
-    average = sum(cases_in_state)/len(cases_in_state)
-    
-    return average
+    return sum(cases_in_state)/len(cases_in_state)
 
 def calculate_trend(new_cases, state,NUMBER_OF_TRACKED_DAYS):
     average_current = averages(new_cases[state][7:NUMBER_OF_TRACKED_DAYS])
