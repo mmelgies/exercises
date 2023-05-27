@@ -1,8 +1,5 @@
 credit_card_number = input("number of credit card: ")
-array_of_credit_card_number = []
-for x in credit_card_number:
-    array_of_credit_card_number.append(x)
-for_luhns_array = array_of_credit_card_number.copy()
+for_luhns_array = list(credit_card_number)
 
 def luhn():
     for_luhns_array.reverse()
@@ -14,7 +11,7 @@ def luhn():
             sum_every_other_digit_from_second_to_last.append(other_digit_from_second_to_last)
         else:
             second_digit = other_digit_from_second_to_last%10
-            first_digit = other_digit_from_second_to_last/10
+            first_digit = int(other_digit_from_second_to_last/10)
             sum_every_other_digit_from_second_to_last.append((second_digit + first_digit))
 
     sum_every_other_digit = []
@@ -68,7 +65,3 @@ def main():
 
 
 main()
-        
-        
-
-
