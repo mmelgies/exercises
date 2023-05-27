@@ -1,9 +1,9 @@
 import csv
 import requests
 
-
+NUMBER_OF_TRACKED_DAYS = 14 
 def main():
-    NUMBER_OF_TRACKED_DAYS = 14 
+
     # Read NYTimes Covid Database
     request = requests.get(
         "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv"
