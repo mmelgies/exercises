@@ -1,24 +1,24 @@
 credit_card_number = input("number of credit card: ")
-for_luhns_array = list(credit_card_number)
+credit_card_number_array = list(credit_card_number)
 
 def luhn():
-    for_luhns_array.reverse()
-    sum_every_other_digit_from_second_to_last = []
-    for x in for_luhns_array[1::2]:
-        other_digit_from_second_to_last = int(x)
-        other_digit_from_second_to_last *= 2
-        if other_digit_from_second_to_last < 10:
-            sum_every_other_digit_from_second_to_last.append(other_digit_from_second_to_last)
+    credit_card_number_array.reverse()
+    sum_second_to_last = []
+    for digit in credit_card_number_array[1::2]:
+        digit = int(digit)
+        digit *= 2
+        if digit < 10:
+            sum_second_to_last.append(digit)
         else:
-            second_digit = other_digit_from_second_to_last%10
-            first_digit = int(other_digit_from_second_to_last/10)
-            sum_every_other_digit_from_second_to_last.append((second_digit + first_digit))
+            second_digit = digit%10
+            first_digit = int(digit/10)
+            sum_second_to_last.append((second_digit + first_digit))
 
     sum_every_other_digit = []
-    for i in for_luhns_array[::2]:
+    for i in credit_card_number_array[::2]:
         every_other_digit = int(i)
         sum_every_other_digit.append(every_other_digit)
-    total = int((sum(sum_every_other_digit_from_second_to_last))+sum(sum_every_other_digit))
+    total = int((sum(sum_second_to_last))+sum(sum_every_other_digit))
 
     return total
 
@@ -61,7 +61,6 @@ def main():
         print("INVALID")
         return check_length
     print_card_type(credit_card_number)
-
 
 
 main()
