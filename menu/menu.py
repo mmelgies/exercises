@@ -12,47 +12,31 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-menu =  {k.lower(): v for k, v in menu.items()}
+
 
 def taking_order(order, price, menu):
     while True:
-        dish = input('Type food from menu which you want to order: ').lower()
+        dish = input('Type food from menu which you want to order: ').title()
         if len(dish) == 0:
             break
         order.append(dish)
-        summing(order, price, menu)
+        try:
+            get_total_price(order, price, menu, dish)
+        except:
+            print('dishes do not exist')
 
     return order
 
-def summing(order, price, menu, dish):
-
+def get_total_price(order, price, menu, dish):
     for j in menu:
         if dish == j:
             price.append(menu[j])
             total_price = sum(price)
             print(total_price)
-            #order.pop(0)
-
 
     return total_price
 
-while True:
-    dish = input('Type food from menu which you want to order: ').lower()
-    if len(dish) == 0:
-        break
-    order.append(dish)
-    try:
-        summing(order, price, menu, dish)
-    except:
-        print('dishes do not exist')
 
-    print(order)
+taking_order(order, price, menu)
 
-
-
-
-
-
-
-
-#taking_order(order, price, menu)
+print(order)
