@@ -24,7 +24,7 @@ def main():
     print_result(state, new_cases, NUMBER_OF_TRACKED_DAYS)
 
 
-def calculate(reader, NUMBER_OF_TRACKED_DAYS):
+def calculate(reader, number_of_tracked_days):
     new_cases = dict()
     previous_cases = dict()
 
@@ -35,26 +35,26 @@ def calculate(reader, NUMBER_OF_TRACKED_DAYS):
         if state not in previous_cases:
             previous_cases[state] = []
 
-        if len(previous_cases[state]) > NUMBER_OF_TRACKED_DAYS:
+        if len(previous_cases[state]) > number_of_tracked_days:
             previous_cases[state].pop(0)
         previous_cases[state].append(today_cases)
 
         for i in range(len(previous_cases[state])):
 
-            if i <= NUMBER_OF_TRACKED_DAYS:
+            if i <= number_of_tracked_days:
                 subtraction = (previous_cases[state][i] - previous_cases[state][i-1])
 
             if state not in new_cases:
                     new_cases[state] = []
 
-            if len(new_cases[state]) >= NUMBER_OF_TRACKED_DAYS:
+            if len(new_cases[state]) >= number_of_tracked_days:
                 new_cases[state].pop(0)
             new_cases[state].append(subtraction)
 
     return new_cases
 
-def percent(new_cases,state,NUMBER_OF_TRACKED_DAYS):
-    average_current = averages(new_cases[state][7:NUMBER_OF_TRACKED_DAYS])
+def percent(new_cases,state,number_of_tracked_days):
+    average_current = averages(new_cases[state][7:number_of_tracked_days])
     average_previous = averages(new_cases[state][0:7])
     if average_current == average_previous:
         return 100.0
@@ -66,9 +66,10 @@ def percent(new_cases,state,NUMBER_OF_TRACKED_DAYS):
 def averages(cases_in_state):
     return sum(cases_in_state)/len(cases_in_state)
 
-def calculate_trend(new_cases, state,NUMBER_OF_TRACKED_DAYS):
-    average_current = averages(new_cases[state][7:NUMBER_OF_TRACKED_DAYS])
+def calculate_trend(new_cases, state,number_of_tracked_days):
+    average_current = averages(new_cases[state][7:number_of_tracked_days])
     average_previous = averages(new_cases[state][0:7])
+
     if average_current > average_previous:
         return 'increase'
     elif average_current < average_previous:
@@ -77,7 +78,7 @@ def calculate_trend(new_cases, state,NUMBER_OF_TRACKED_DAYS):
         return 'constant level compared to the previous week'
 
 
-def print_result(state, new_cases, NUMBER_OF_TRACKED_DAYS):
-    print(f"{state} had a 7-day average of {int(averages(new_cases[state][7:NUMBER_OF_TRACKED_DAYS]))}, and a {calculate_trend(new_cases, state,NUMBER_OF_TRACKED_DAYS)} of {round(percent(new_cases,state,NUMBER_OF_TRACKED_DAYS),2)}%")
+def print_result(state, new_cases, number_of_tracked_days):
+    print(f"{state} had a 7-day average of {int(averages(new_cases[state][7:number_of_tracked_days]))}, and a {calculate_trend(new_cases, state,number_of_tracked_days)} of {round(percent(new_cases,state,number_of_tracked_days),2)}%")
 
 main()
