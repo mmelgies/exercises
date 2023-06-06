@@ -4,6 +4,11 @@ function firstbutton() {
 
 function changehtmlcontent() {
     document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+
+function changehtmlcontent2() {
+    let text = document.getElementById("changeTheContent").innerText;
+    document.getElementById("changeTheContent").innerText = text.replace("Check this uncensored word","shit");
 }
 
 function Turnonthebulb(){
@@ -72,3 +77,37 @@ const person = {
     }
   };
 
+const fruits = ["Banana","Orange", "Apple", "Mango"];
+
+function create_list_from_array(){
+    //const fruits = ["Banana","Orange", "Apple", "Mango"];
+    let flen = fruits.length;
+    let ul = "<ul>";
+    for (let i = 0; i < flen; i ++){
+        ul += "<li>" + fruits[i] + "</li>";
+    }
+    ul += "</ul>";
+    document.getElementById("array.loop").innerHTML = ul;
+}
+
+
+
+function createList(fruits) {
+    const fruitsListHtml = fruits.forEach((fruit) => {
+        return `<li>${fruit}</li>`;
+    });
+    return `<ul>${fruitsListHtml}</ul>`;
+}
+
+
+
+
+
+
+
+
+const add = (x) => (y) => x + y
+const add5 = add(5)
+const add10 = add(10)
+
+document.getElementById("ArrayLoopBetter").innerHTML = createList(fruits);

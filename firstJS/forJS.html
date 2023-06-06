@@ -30,9 +30,22 @@
     <script>
         document.getElementById("person_name").innerHTML = person.fullName();
     </script>
+    <p>"test loop array to list"</p>
+    <p id ='array.loop'></p>
+    <script>
+        create_list_from_array()
+    </script>
+    <p>array for loop better version</p>
+    <p id ='ArrayLoopBetter'></p>
+    
 <p id ="podzielpomnoz"></p>
 <script>
     document.getElementById("podzielpomnoz").innerHTML = podziel(pomnoz(3,4));
+</script>
+
+<p id ="FirstTimeWithFunctionalProgramming"></p>
+<script>
+    document.getElementById("FirstTimeWithFunctionalProgramming").innerHTML = add5(4);
 </script>
 <br>
 <p id = "xd">The temperature is:</p>
@@ -64,6 +77,10 @@
 
 <p id="demo">JavaScript can change HTML content.</p>
 <button type="button" onclick="changehtmlcontent()">Click Me!</button>
+
+<p>another way to change html content with onclick</p>
+<button type = "button" onclick="changehtmlcontent2()">Try it</button> 
+<p id = "changeTheContent"> Check this uncensored word</p>
 
 
 <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
