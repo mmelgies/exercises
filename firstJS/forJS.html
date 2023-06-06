@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FirstTryJS</title>
+        <link rel="stylesheet" href="forJS.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="firstJS.js">
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>My First Javascript</h1>
+        </div>
+        <div class="FirstButton">
+        <button type="button"
+            onclick="firstbutton()">
+        Click me to display Date and Time.</button>
+        </div>
+        <p id="data"></p>
+    <br>
+    <p id = 'fiat'></p>
+    <script>
+        document.getElementById("fiat").innerHTML = car;
+    </script>
+    <p id = 'car_type'></p>
+    <script>
+        document.getElementById("car_type").innerHTML = "The car type is " + carType.type;
+    </script>
+    <p id = 'person_name'></p>
+    <script>
+        document.getElementById("person_name").innerHTML = person.fullName();
+    </script>
+    <p>"test loop array to list"</p>
+    <p id ='array.loop'></p>
+    <script>
+        create_list_from_array()
+    </script>
+    <p>array for loop better version</p>
+    <p id ='ArrayLoopBetter'></p>
+    
+<p id ="podzielpomnoz"></p>
+<script>
+    document.getElementById("podzielpomnoz").innerHTML = podziel(pomnoz(3,4));
+</script>
+
+<p id ="FirstTimeWithFunctionalProgramming"></p>
+<script>
+    document.getElementById("FirstTimeWithFunctionalProgramming").innerHTML = add5(4);
+</script>
+<br>
+<p id = "xd">The temperature is:</p>
+<p>2</p>
+
+  <p id ="multiply"></p>
+        <script>
+            multiplyFunction(4, 4)
+        </script>
+   <!-- <script>
+        let x = myFunction(4, 3);
+        document.getElementById("test").innerHTML = x;
+    </script>-->
+    <p id ="forMessage"></p>
+    <script>
+        //document.getElementById("forMessage").innerHTML = MyMessage();
+        MyMessage();
+    </script>
+<br>
+<p id ="tocelsius"></p>
+<script>toCelsius(77)</script>
+   <!-- <script>
+        let value = toCelsius(77);
+        document.getElementById("tocelsius").innerHTML = value;
+    </script>-->
+<p id="celsius2"></p>
+<script>toCelciusMix(77)</script>
+<br>
+
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" onclick="changehtmlcontent()">Click Me!</button>
+
+<p>another way to change html content with onclick</p>
+<button type = "button" onclick="changehtmlcontent2()">Try it</button> 
+<p id = "changeTheContent"> Check this uncensored word</p>
+
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<div class="Turnthebulb">
+<button type="myImage" onclick="Turnonthebulb()">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+
+    <button type="myImage" onclick="Turnoffthebulb()">Turn off the light</button>
+</div>
+
+<p id="added"></p> <!--
+<script>
+    document.getElementById("add").innerHTML = 5 + 6;
+</script>-->
+<script>
+    let add = adding(5, 6);
+    document.getElementById("added").innerHTML = add;
+</script>
+
+
+
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="demo1"></p>
+
+<script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+
+
+<h2>JavaScript const</h2>
+
+<p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+<p id="const"></p>
+
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Change an element:
+cars[0] = "Toyota";
+
+// Add an element:
+cars.push("Audi");
+
+// Display the Array:
+document.getElementById("const").innerHTML = cars; 
+</script>
+
+<h1>JavaScript String Operators</h1>
+
+<p>All conditional operators can be used on both numbers and strings.</p>
+
+<p id="trueORfalse"></p>
+
+<script>
+let text1 = "A";
+let text2 = "B";
+let result = text1 < text2;
+document.getElementById("trueORfalse").innerHTML = "Is A less than B? " + result;
+</script>
+
+    </body>
+</html>

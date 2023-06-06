@@ -1,0 +1,20 @@
+ .header {
+    background-color: #db0c0c;
+    padding: 20px;
+    text-align: center;
+  }
+
+/*.FirstButton {
+    position: relative;
+    margin-bottom: 100px;
+    position: absolute;
+}*/
+
+#demo {
+    /*background-color:red;*/
+    margin-top: 10px;
+}
+
+#xd {
+  float:left
+}
