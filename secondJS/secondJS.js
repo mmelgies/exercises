@@ -22,7 +22,12 @@ function check(x){
 //document.getElementById("test").innerHTML = 2 > 10;
 
 function checkAge() {
-  let age = document.getElementById("age").value;
-  let alcoholable = (age < 18) ? "Too young" : "Old enough";
-  document.getElementById("demo").innerHTML = alcoholable + " to vote.";
+  let alcoholable;
+  let age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    alcoholable = "Input is not a number";
+  } else {
+    alcoholable = (age < 18) ? "Too young" : "Old enough";
+  }
+  document.getElementById("demo").innerHTML = alcoholable + " to vote";
 }
