@@ -50,3 +50,15 @@ switch (day) {
     day = "Saturday";
 }
 document.getElementById("demo").innerHTML = "Today is " + day;
+
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("test").innerHTML = fruits.get("apples");
+
+
+let function4multiply = (a,b) => a*b;
+document.getElementById("multiply").innerHTML = function4multiply(4,5);
