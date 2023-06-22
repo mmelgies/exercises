@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="trivia.css">
+        
+        <script src="trivia.js" defer></script>
+
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section1">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+               <h3>Q1</h3>
+
+               <button onclick="changeColorRed()" id="buttonRed">A1</button>
+               <div class="textDown">
+                <p id="red"></p>
+               </div>
+
+               <button onclick="changeColorGreen()" id="buttonGreen">A2</button>
+               <div class="textDown">
+                <p id="green"></p>
+                </div>
+
+             <!-- <button onclick="changeColorRed2()" id="buttonRed2">A3</button>-->
+             <button id="buttonRed2">A3</button>
+              <div class="textDown">
+                <p id="red2"></p>
+              </div>
+
+              
+
+            </div>
+
+
+            <div class="section2">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+               <!-- <input type="button"> -->
+                <!-- TODO: Add free response question here -->
+                <form>
+                    Text: <input name = "a" type="text" />
+                    Password: <input name ="b" type="password" />
+                    Radio: <input name ="c" type ="radio" />
+                    Checkbox: <input name = "d" type = "checkbox" />
+                    Submit: <input name = "e" type = "submit"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
