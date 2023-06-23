@@ -4,59 +4,41 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="trivia.css">
+        <!--<link rel="stylesheet" href="trivia.css">-->
         
         <script src="trivia.js" defer></script>
 
         <title>Trivia!</title>
-        <script>
-            // TODO: Add code to check answers to questions
-        </script>
+        
     </head>
     <body>
         <div class="header">
             <h1>Trivia!</h1>
         </div>
-
+        <hr>
         <div class="container">
-            <div class="section1">
+            <div class="section">
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
+                <div id="MQ-1" class="mul-question"></div>
                <h3>Q1</h3>
 
-               <button onclick="changeColorRed()" id="buttonRed">A1</button>
-               <div class="textDown">
-                <p id="red"></p>
-               </div>
-
-               <button onclick="changeColorGreen()" id="buttonGreen">A2</button>
-               <div class="textDown">
-                <p id="green"></p>
-                </div>
-
-             <!-- <button onclick="changeColorRed2()" id="buttonRed2">A3</button>-->
-             <button id="buttonRed2">A3</button>
-              <div class="textDown">
-                <p id="red2"></p>
-              </div>
-
-              
-
+                <button class="margin-right">A1</button>
+                <button class="margin-right">A2</button>
+                <button class="margin-right">A3</button>
+                <p class="MQ-1-result"></p>
+                
             </div>
 
 
-            <div class="section2">
+            <div class="section">
                 <h2>Part 2: Free Response</h2>
                 <hr>
-               <!-- <input type="button"> -->
-                <!-- TODO: Add free response question here -->
-                <form>
-                    Text: <input name = "a" type="text" />
-                    Password: <input name ="b" type="password" />
-                    Radio: <input name ="c" type ="radio" />
-                    Checkbox: <input name = "d" type = "checkbox" />
-                    Submit: <input name = "e" type = "submit"/>
-                </form>
+                <div id="FR-1" class="Free-response">
+                <h3>Q Free 1</h3>
+                <input id="FR-1-answer" type="text" placeholder="Answer">
+                <button id="FR-1">Check answer</button>
+                <p class="FR-1-result"></p>
             </div>
         </div>
     </body>

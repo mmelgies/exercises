@@ -31,5 +31,14 @@ function red() {
     
 }
 
+var x = document.getElementsByClassName("mul-question")
+const buttons = document.querySelectorAll(".mul-question");
 
+//document.getElementsByClassName("mul-question")
+x.addEventListener("click", validateMultipleChoice);
 
+function validateMultipleChoice() {
+    //text for the user correct or incorrect and change the colour of the button
+    //for each or sth check if user click correct button if yes change the color and show the text by add event listener
+    document.getElementsByClassName("MQ-1-result").innerHTML = "correct";
+}
