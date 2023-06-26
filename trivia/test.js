@@ -1,18 +1,54 @@
-//var x = document.getElementById("myBtn");
-const x = document.getElementsByClassName("margin-right");
+const correctAnswer = new Map([
+    ["text", "correct"],
+    ["color", "#7CFC00"]
 
-x[0].addEventListener("click",myFunction);
+]);
+
+const inCorrectAnswer = new Map([
+    ["text", "incorrect"],
+    ["color", "#880808"]
+]);
+
+const buttons = document.querySelectorAll(".margin-right");
+
+buttons.forEach(buttons => {
+  
+   buttons.addEventListener("click",myFunction);
+   
+})
+console.log(buttons);
 
 function myFunction(){
+
     const textClass = document.getElementsByClassName("testClass");
-    const messageCorrect = "correct";
+    const messageCorrect = correctAnswer.get("text");
     textClass[0].innerHTML = messageCorrect;
-    //document.getElementById("green").style.color = "#7CFC00";
-    const colorCorrect = "#7CFC00";
-    x[0].style.backgroundColor = colorCorrect;
-    textClass[0].style.color = "#7CFC00";
+    const colorCorrect = correctAnswer.get("color");
+    buttons[0].style.backgroundColor = colorCorrect;
+    textClass[0].style.color = correctAnswer.get("color");//"#7CFC00";
+   
     
 }
+
+function myFunctionTest(){
+   buttons.forEach(buttons =>{
+    const textClass = document.getElementsByClassName("testClass");
+    //const messageCorrect = "correct";
+    const messageCorrect = correctAnswer.get("text");
+    textClass[0].innerHTML = messageCorrect;
+    //const colorCorrect = "#7CFC00";
+    const colorCorrect = correctAnswer.get("color");
+    x[0].style.backgroundColor = colorCorrect;
+    
+    textClass[0].style.color = correctAnswer.get("color");//"#7CFC00";
+   })
+    
+}
+
+
+
+
+
 
 /*function myFunction2(){
     const messageCorrect = "correct";
