@@ -9,63 +9,49 @@ const inCorrectAnswer = new Map([
     ["color", "#880808"]
 ]);
 
-const buttons = document.querySelectorAll(".margin-right");
+const GREEN = "rgb(0,128,0)";
+const CORRECT_MSG = "Correct";
 
-buttons.forEach(buttons => {
-  
-   buttons.addEventListener("click",myFunction);
-   
-})
-console.log(buttons);
+const RED = "rgb(255,0,0)";
+const INCORRECT_MSG = "Incorrect";
 
-function myFunction(){
+const correctAnswers = ['A1','A3'];
 
-    const textClass = document.getElementsByClassName("testClass");
-    const messageCorrect = correctAnswer.get("text");
-    textClass[0].innerHTML = messageCorrect;
-    const colorCorrect = correctAnswer.get("color");
-    buttons[0].style.backgroundColor = colorCorrect;
-    textClass[0].style.color = correctAnswer.get("color");//"#7CFC00";
-   
+
+
+const validateMultipleChoice = () => {
+    const isButton = event.target.nodeName === 'BUTTON';
+    const answerIsCorrect = correctAnswers.includes(event.target.innerText);
+    const questionId = event.currentTarget.id;
+    console.log(`questionID = ${questionId}`);
+    console.log(event.target);
+    console.log(event.currentTarget);
+    const result = document.querySelector(`.${questionId}-result`);
+
+    if (!isButton)
+    {
+        return
+    }
+
+    if (answerIsCorrect)
+    {
+        event.target.style.backgroundColor = GREEN;
+        result.innerText = CORRECT_MSG;
+    }
+
+    else
+    {
+        event.target.style.backgroundColor = RED;
+        result.innerText = INCORRECT_MSG;
+    }
+
+    document.querySelectorAll(`div#${questionId} button`).forEach((button) => button.disabled = true);
     
 }
 
-function myFunctionTest(){
-   buttons.forEach(buttons =>{
-    const textClass = document.getElementsByClassName("testClass");
-    //const messageCorrect = "correct";
-    const messageCorrect = correctAnswer.get("text");
-    textClass[0].innerHTML = messageCorrect;
-    //const colorCorrect = "#7CFC00";
-    const colorCorrect = correctAnswer.get("color");
-    x[0].style.backgroundColor = colorCorrect;
-    
-    textClass[0].style.color = correctAnswer.get("color");//"#7CFC00";
-   })
-    
-}
 
 
-
-
-
-
-/*function myFunction2(){
-    const messageCorrect = "correct";
-    const messageIncorect = "incorrect";
-    const colorConnec
-}*/
-
-/*make a collection of data with correct text and colour and incorrect text and color before function and use it in function
-for example
-correct {
-    text: "correct"
-    color: "#7CFC00"
-}
-
-add event listener for every multiple choice using for each maybe??
-
-
-*/
+const multipleChoiceQuestionsWrapper = document.querySelectorAll('.mul-question');
+multipleChoiceQuestionsWrapper.forEach((question) => question.addEventListener('click', validateMultipleChoice));
 
 
