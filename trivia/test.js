@@ -51,6 +51,30 @@ const validateMultipleChoice = () => {
 
 
 
+const freeAnswer = document.getElementById("FR-1-answer");
+
+
+const checkFreeAnswer = () => {
+    
+    if (freeAnswer.value == "apple")
+    {
+        document.getElementById("demo").innerHTML= "correct";
+    }
+    else 
+    {
+        document.getElementById("demo").innerHTML= "incorrect";
+    }
+}
+console.log(checkFreeAnswer);
+const buttonForFreeAnswer = document.getElementById("FR-1-test");
+buttonForFreeAnswer.addEventListener('click', checkFreeAnswer);
+
+freeAnswer.addEventListener("change", () => {
+    console.log(freeAnswer.value);
+
+})
+
+
 const multipleChoiceQuestionsWrapper = document.querySelectorAll('.mul-question');
 multipleChoiceQuestionsWrapper.forEach((question) => question.addEventListener('click', validateMultipleChoice));
 
