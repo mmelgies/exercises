@@ -1,44 +1,75 @@
 
-function changeColorRed() {
-    document.getElementById("red").innerHTML = "incorrect";
-    document.getElementById("buttonRed").style.backgroundColor='#911';
-    document.getElementById("red").style.color = "#911";
-}
 
-function changeColorGreen() {
-    document.getElementById("green").innerHTML = "correct!";
-    document.getElementById("green").style.color = "#7CFC00";
-    document.getElementById("buttonGreen").style.backgroundColor='#7CFC00';
-}
+const GREEN = "rgb(0,128,0)";
+const CORRECT_MSG = "Correct";
 
-/*function changeColorRed2() {
-    document.getElementById("red2").innerHTML = "incorrect";
-    document.getElementById("buttonRed2").style.backgroundColor='#911';
-    document.getElementById("red2").style.color = "#911";
-}*/
+const RED = "rgb(255,0,0)";
+const INCORRECT_MSG = "Incorrect";
 
-const element = document.getElementById("buttonRed2");
-document.getElementById("buttonRed2").addEventListener("click", red);
+const correctAnswers = ['A1','A3'];
 
 
 
+const validateMultipleChoice = () => {
+    const isButton = event.target.nodeName === 'BUTTON';
+    const answerIsCorrect = correctAnswers.includes(event.target.innerText);
+    const questionId = event.currentTarget.id;
+    console.log(`questionID = ${questionId}`);
+    console.log(event.target);
+    console.log(event.currentTarget);
+    const result = document.querySelector(`.${questionId}-result`);
 
-function red() {
-    document.getElementById("red2").innerHTML = "incorrect";
-    document.getElementById("buttonRed2").style.backgroundColor='#911';
-    document.getElementById("red2").style.color = "#911";
+    if (!isButton)
+    {
+        return
+    }
 
+    if (answerIsCorrect)
+    {
+        event.target.style.backgroundColor = GREEN;
+        result.innerText = CORRECT_MSG;
+    }
+
+    else
+    {
+        event.target.style.backgroundColor = RED;
+        result.innerText = INCORRECT_MSG;
+    }
+
+    document.querySelectorAll(`div#${questionId} button`).forEach((button) => button.disabled = true);
     
 }
 
-var x = document.getElementsByClassName("mul-question")
-const buttons = document.querySelectorAll(".mul-question");
 
-//document.getElementsByClassName("mul-question")
-x.addEventListener("click", validateMultipleChoice);
 
-function validateMultipleChoice() {
-    //text for the user correct or incorrect and change the colour of the button
-    //for each or sth check if user click correct button if yes change the color and show the text by add event listener
-    document.getElementsByClassName("MQ-1-result").innerHTML = "correct";
+const freeAnswer = document.getElementById("FR-1-answer");
+
+
+const checkFreeAnswer = () => {
+    
+    if (freeAnswer.value == "apple")
+    {
+        document.getElementById("demo").innerHTML= "correct";
+    }
+    else 
+    {
+        document.getElementById("demo").innerHTML= "incorrect";
+    }
 }
+console.log(checkFreeAnswer);
+const buttonForFreeAnswer = document.getElementById("FR-1-test");
+buttonForFreeAnswer.addEventListener('click', checkFreeAnswer);
+
+freeAnswer.addEventListener("change", () => {
+    console.log(freeAnswer.value);
+
+})
+
+
+const multipleChoiceQuestionsWrapper = document.querySelectorAll('.mul-question');
+multipleChoiceQuestionsWrapper.forEach((question) => question.addEventListener('click', validateMultipleChoice));
+
+
+document.getElementById("demotest").addEventListener("click", function(){
+    document.getElementById("demoTestButton").innerHTML = "test";
+})

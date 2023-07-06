@@ -1,13 +1,4 @@
-const correctAnswer = new Map([
-    ["text", "correct"],
-    ["color", "#7CFC00"]
 
-]);
-
-const inCorrectAnswer = new Map([
-    ["text", "incorrect"],
-    ["color", "#880808"]
-]);
 
 const GREEN = "rgb(0,128,0)";
 const CORRECT_MSG = "Correct";
@@ -79,3 +70,6 @@ const multipleChoiceQuestionsWrapper = document.querySelectorAll('.mul-question'
 multipleChoiceQuestionsWrapper.forEach((question) => question.addEventListener('click', validateMultipleChoice));
 
 
+document.getElementById("demotest").addEventListener("click", function(){
+    document.getElementById("demoTestButton").innerHTML = "test";
+})
