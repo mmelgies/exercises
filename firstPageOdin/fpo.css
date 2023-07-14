@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color:white;
+    font-size: 20px;
+}
+
+p   {
+    color: rgb(60, 179, 113);
+}
+
+h1 {
+    color: pink
+}
+
+/*div {
+    background: pink;
+    width: 500px;
+    height: 500px;
+    
+}*/
+
+span {
+    color: yellow;
+    /*font-size: 40px;
+    font-weight: bold;*/
+}
+
+.top-section {
+    background: pink;
+}
+
+.bottom-section {
+    background: lightblue;
+    
+}
+
+.intro {
+    font-size: 30px;
+    color: yellow;
+}
+
+.highlight {
+    background: green;
+
+}
