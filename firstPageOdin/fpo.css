@@ -43,3 +43,24 @@ span {
     background: green;
 
 }
+
+.box {
+    /*background: pink;*/
+    background-image: url(hamster.jpg);
+    width: 300px;
+    margin: 100px;
+    border-style: solid;
+    border-left-color: red;
+    border-width: 5px;
+    border-right-color: green;
+    border-top: 5px solid yellow;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.pattern {
+    background-image: url(subpattern.jpg);
+    background-repeat: repeat;
+}
