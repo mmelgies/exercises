@@ -64,3 +64,36 @@ span {
     background-image: url(subpattern.jpg);
     background-repeat: repeat;
 }
+
+.bolder {
+    font-weight: bolder;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    color: violet;
+    
+}
+
+a:hover {
+    color: yellow;
+}
+
+/*a:visited{
+        color: pink;
+    }*/
+
+
+a:active {
+    color:blue;
+}
+
+
+.body-text {
+    background-color: #8094d1;
+    color: black;
+}
