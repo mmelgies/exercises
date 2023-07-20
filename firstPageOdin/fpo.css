@@ -97,3 +97,20 @@ a:active {
     background-color: #8094d1;
     color: black;
 }
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ul li {
+    background:red;
+    }
+    
+    ol li {
+    background: blue;
+    }
+
+.image {
+    float:left;
+    margin-right: 20px;
+}
